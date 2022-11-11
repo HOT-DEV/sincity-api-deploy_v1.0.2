@@ -1,0 +1,33 @@
+import { Timestamp } from 'Typeorm';
+export declare type status = "draft" | "active";
+export declare class tbl_products {
+    id: number;
+    title: string;
+    description: string;
+    imageURLs: string;
+    category: number;
+    price: number;
+    priceDiscount?: number;
+    tags?: string;
+    manufacturer: string;
+    upc?: number;
+    finishAndColor?: string;
+    gripsAndStock?: string;
+    barrelAndLength?: string;
+    typeOfBarrel?: string;
+    action?: string;
+    caliber?: string;
+    frameAndMaterial?: string;
+    type?: string;
+    hand?: string;
+    capacity?: number;
+    sights?: string;
+    size?: string;
+    safety?: string;
+    model?: string;
+    meta?: string;
+    stock: number;
+    status: string;
+    createdAt: Timestamp;
+    updatedAt?: Timestamp;
+}
